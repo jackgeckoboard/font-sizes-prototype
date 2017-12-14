@@ -1,0 +1,192 @@
+/*All*/
+
+.widget {
+  color: rgba(255, 255, 255, 0.86);
+  background-color: #2a2a2a;
+  overflow: hidden;
+  float: left;
+  margin: 5px;
+}
+
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bar-chart .bars-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.bar-chart .row {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bar-chart .row:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100px;
+  background-color: #46b5f6;
+}
+
+.bar-chart .label {
+  float: left;
+}
+
+.bar-chart .value {
+  float: right;
+}
+
+.leaderboard .row {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.leaderboard .row:last-of-type {
+  border-bottom: none;
+}
+
+.leaderboard .label {
+  float: left;
+}
+
+.leaderboard .value {
+  float: right;
+}
+
+.column-chart .columns-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.column-chart .y-axis-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column-chart .y-axis-labels span {
+  display: block;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25%;
+  align-items: center;
+  font-size: 21px;
+}
+
+.column-fill {
+  background-color: #46b5f6;
+  width: 100%;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.column .medium-column {
+  height: 50%;
+}
+
+.column .large-column {
+  height: 75%;
+}
+.column .small-column {
+  height: 25%;
+}
+
+/*Big*/
+
+.big .title {
+  font-size: 28px;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 55px;
+  padding-top: 18px;
+}
+
+.big .leaderboard .row {
+  height: 55px;
+  padding: 18px;
+  font-size: 24px;
+}
+
+.big .bar-chart .bars-wrapper {
+  padding: 18px 18px 24px;
+}
+
+.big .bar-chart .row {
+  padding: 6px 0;
+  font-size: 24px;
+}
+
+.big .bar-chart .row:after {
+  bottom: -30px;
+  height: 8px;
+}
+
+.big .column-chart .columns-content-wrapper {
+  padding: 18px;
+  font-size: 21px;
+}
+
+.big .column {
+  font-size: 21px;
+}
+
+.big .column-fill {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+/*Small */
+
+.small .title {
+  font-size: 21px;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 40px;
+  padding-top: 14px;
+}
+
+.small .bar-chart .bars-wrapper {
+  padding: 14px 14px 18px;
+}
+
+.small .bar-chart .row {
+  padding: 4px 0;
+  font-size: 18px;
+}
+
+.small .bar-chart .row:after {
+  bottom: -23px;
+  height: 4px;
+}
+
+.small .leaderboard .row {
+  height: 40px;
+  padding: 14px;
+  font-size: 18px;
+}
+
+.small .column-chart .columns-content-wrapper {
+  padding: 14px;
+  font-size: 16px;
+}
+
+.small .column {
+  font-size: 16px;
+}
+
+.small .column-fill {
+  width: 25%;
+  margin-bottom: 10px;
+}
